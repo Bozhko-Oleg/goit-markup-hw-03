@@ -37,7 +37,7 @@ img {
 }
 
 .section-paddings {
-  margin-bottom: 120px 0;
+  padding: 120px 0;
 }
 
 /* Header */
@@ -139,7 +139,7 @@ img {
     text-align: center;
     color: #fff;
     margin-bottom: 47px;
-    padding-top: 189px;
+    
     max-width: 496px;
     margin-left: auto;
     margin-right: auto;
@@ -161,7 +161,7 @@ img {
   border-style: none;
   text-align: center;
   margin-left: 480px;
-  margin-bottom: 188px;
+
   display: block;
   min-width: 169px;
   margin-left: auto;
