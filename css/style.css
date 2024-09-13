@@ -1,10 +1,66 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display:block
+}
+
 .body {
   background-color: #fff;
   font-family: "Roboto", sans-serif;
   color: #434455;
 }
 
+.container {
+  width: 1158px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.section-paddings {
+  margin-bottom: 120px;
+}
+
 /* Header */
+
+.page-header {
+  border-bottom: 1px solid #e7e9fc;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+
+.header-link-list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
 
 .logo-header {
   font-family: "Raleway", sans-serif;
@@ -14,6 +70,8 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
+  padding: 24px 0;
+  margin-right: 76px;
 }
 
 .accent {
@@ -21,6 +79,8 @@
 }
 
 .link {
+  display: block;
+  padding: 24px 0;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -28,17 +88,27 @@
   color: #2e2f42;
 }
 
+
 .link:hover, .link:focus {
     color: #404BBF;
 }
 
 
 .header-address {
+  margin-left: auto;
     font-style: normal;
  
 }
 
+.contacts-list {
+  gap: 40px;
+  display: flex;
+  align-items: center;
+}
+
 .header-address-link {
+  display: block;
+  padding: 24px 0;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -55,8 +125,10 @@
 .main-background {
     background: #2e2f42;
     line-height: 1.07;
+   
 
 } 
+
 
 
  .main-logo {
@@ -66,6 +138,8 @@
     letter-spacing: 0.02em;
     text-align: center;
     color: #fff;
+    margin-bottom: 47px;
+    padding-top: 189px;
     
 }
 
@@ -79,18 +153,33 @@
   text-align: center;
   cursor: pointer;
   font-family: "Roboto", sans-serif;
-}
+  padding: 16px 32px;
+  border-radius: 4px;
+  border-style: none;
+  text-align: center;
+  margin-left: 480px;
+  margin-bottom: 188px;
+  }
 
 .main-button:hover, .main-button:focus {
   background-color: #404BBF;
 }
 
-.header-unvisible {
-  color: #fff;
-}
-
 
 /* Section 2 */
+
+.header-unvisible {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 
 .goal-title {
   font-weight: 500;
@@ -98,19 +187,25 @@
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-bottom: 8px;
 }
 
 .goal-text {
   line-height: 1.5;
   letter-spacing: 0.02em;
-
+width: 264px;
 }
 
+.list-goals {
+  display: flex;
+  gap: 24px;
+}
 
 /* section 3 */
 
 .our-team-section {
   background-color: #F4F4FD;
+
 }
 
 .our-team-photos {
@@ -124,6 +219,27 @@
   text-transform: capitalize;
   color: #2e2f42;
   text-align: center;
+  padding-top: 120px;
+}
+
+.our-team-list {
+  display: flex;
+  gap: 24px;
+  
+}
+
+.our-team-photos{
+border-radius: 0 0 4px 4px;
+margin-bottom: 120px;
+box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+}
+
+.our-team-underfoto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  margin: 32px 0;
 }
 
 .our-team-names {
@@ -132,6 +248,7 @@
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  
 }
 
 .our-team-text {
@@ -150,6 +267,26 @@
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: #2e2f42;
+  margin-bottom: 72px;
+
+}
+
+.our-portfolio-list {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.our-portfolio-underfoto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8px;
+  align-items: flex-start;
+  border-bottom: 1px solid #e7e9fc;
+    border-left: 1px solid #e7e9fc;
+    border-right: 1px solid #e7e9fc;
+    padding: 32px 16px;
 }
 
 .our-portfolio-names {
@@ -182,6 +319,7 @@ background-color: #2e2f42;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
+
 }
 
 .accent-footer {
@@ -199,4 +337,13 @@ background-color: #2e2f42;
         line-height: 1.5;
         letter-spacing: 0.02em;
         color: #f4f4fd;
+        width: 264px;
+        
+      }
+
+.footer-all-text {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 100px 0;
 }
