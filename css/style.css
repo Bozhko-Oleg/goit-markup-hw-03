@@ -221,7 +221,7 @@ width: 264px;
 
 .our-team-photos {
   background-color: #FFFFFF;
-  padding: 32px 0;
+  
 }
 
 .our-team-title {
@@ -249,8 +249,7 @@ box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.1
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 32px;
-
+  padding: 32px 0;
 }
 
 .our-team-names {
